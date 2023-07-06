@@ -1,0 +1,69 @@
+@import "../../index.scss";
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 100%;
+  padding: 16px 24px;
+
+  .messages-container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $palette-grey-700;
+    font-weight: 600;
+  }
+
+  .messages-container_note {
+    color: $palette-grey-700;
+    background-color: $palette-grey-200;
+    padding: 12px;
+    border-radius: 4px;
+  }
+
+  .messages-container_content {
+    flex: 1;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .message {
+      .message-head {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+
+  .messages-container_action {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    padding-left: 16px;
+    background-color: $palette-grey-200;
+    border-radius: 25px;
+
+    input {
+      flex: 1;
+      font-size: 0.8125rem;
+      color: $palette-grey-700;
+      height: 80%;
+      background-color: $palette-grey-200;
+      border: none;
+      outline: none;
+    }
+
+    .sender {
+      font-size: 24px;
+      transition: all 0.3s;
+    }
+
+    .sender.active {
+      color: $palette-primary-main;
+    }
+  }
+}

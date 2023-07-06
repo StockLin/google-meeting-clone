@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  color: white;
+  background-color: $palette-grey-900;
+
+  .footer-left {
+    display: flex;
+    gap: 8px;
+  }
+  .footer-middle {
+    display: flex;
+    gap: 16px;
+
+    .icon-btn {
+      font-size: 14px;
+      padding: 16px;
+      color: white;
+      background-color: $palette-grey-800;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $palette-grey-700;
+      }
+    }
+
+    .icon-btn.error {
+      background-color: $palette-error-main;
+
+      &:hover {
+        background-color: $palette-error-light;
+      }
+    }
+
+    .icon-btn-close {
+      font-size: 16px;
+      padding: 16px;
+      color: white;
+      background-color: $palette-error-main;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $palette-error-light;
+      }
+    }
+  }
+  .footer-right {
+    display: flex;
+    gap: 8px;
+
+    .icon-btn {
+      font-size: 16px;
+      padding: 14px;
+      color: white;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $palette-grey-700;
+      }
+    }
+
+    .icon-btn.active {
+      color: $palette-primary-light;
+    }
+  }
+}

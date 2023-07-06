@@ -1,0 +1,27 @@
+@import "../../index.scss";
+
+.room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .room-body {
+    flex: 1;
+    display: flex;
+    background-color: $palette-grey-900;
+
+    .room-body__left {
+      flex: 1;
+      border: 1px solid blue;
+    }
+
+    .room-body__right {
+      width: 360px;
+      padding: 16px;
+    }
+  }
+
+  .room-footer {
+    height: 80px;
+  }
+}

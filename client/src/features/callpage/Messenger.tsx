@@ -43,7 +43,7 @@ const Messenger: React.FC = () => {
             className=" w-[80%] pl-4 outline-none text-sm text-gray-600 font-light bg-gray-100"
             placeholder="傳送訊息"
           />
-          <Button styles=" text-md text-blue-600 bg-gray-100 hover:bg-gray-200 w-[42px] h-[42px] rounded-full">
+          <Button styles=" text-md text-blue-600 bg-gray-100 hover:bg-gray-200 w-[42px] h-[42px] rounded-[50%]">
             <FaPaperPlane />
           </Button>
         </div>

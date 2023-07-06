@@ -20,17 +20,17 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className=" w-full h-screen flex flex-col">
+    <div className="flex flex-col w-full h-screen ">
       <Navbar />
 
-      <div className=" h-full p-16 flex flex-col md:flex-row justify-around items-center ">
+      <div className="flex flex-col items-center justify-around h-full p-16  md:flex-row">
         {/* left-side */}
-        <div className=" flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <div className=" flex flex-col max-w-xl px-[16px] py-[48px]">
             <div className=" text-5xl font-normal leading-[3.5rem]">
               進階視訊會議功能現已免費開放給所有人使用。
             </div>
-            <div className=" text-lg font-normal mt-4 text-gray-500">
+            <div className="mt-4 text-lg font-normal text-gray-500 ">
               我們重新打造了 Google
               Meet，讓所有人都能免費使用這項既安全又實用的商務會議服務。
             </div>
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                 發起會議
               </div>
               <div className=" flex justify-center items-center ml-4 min-w-[17em]">
-                <div className=" relative">
+                <div className="relative ">
                   <div className=" absolute top-[50%] translate-x-[16px] -translate-y-[50%] z-10">
                     <FaKeyboard />
                   </div>
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className=" pt-[24px] border-t-2 mt-8 font-light">
-              <a href="/" className=" text-blue-600">
+              <a href="/" className="text-blue-600 ">
                 進一步瞭解
               </a>{" "}
               <span>Google Meet</span>

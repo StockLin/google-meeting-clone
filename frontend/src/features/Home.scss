@@ -1,0 +1,113 @@
+@import "../index.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 124px;
+  }
+
+  span {
+    font-size: 22px;
+    margin-left: 4px;
+  }
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .action {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: gray;
+    transition: all 0.3s;
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (min-width: $break-point-sm) {
+    flex-direction: row;
+  }
+
+  .body-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    padding: 48px 16px;
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-width: 17em;
+      transition: all 0.3s;
+      padding-bottom: 24px;
+
+      .toolbar-input {
+        position: relative;
+        .icon {
+          position: absolute;
+          top: 50%;
+          transform: translate(16px, -50%);
+        }
+        input {
+          height: 48px;
+          padding: 0;
+          padding-left: 42px;
+          padding-right: 36px;
+          outline-color: $palette-primary-main;
+          caret-color: $palette-primary-main;
+          border-radius: 4px;
+          border: 1px solid $palette-grey-600;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .help-text {
+      padding-top: 24px;
+
+      span {
+        color: $palette-grey-600;
+      }
+    }
+  }
+
+  .body-right {
+    .body-cover {
+      width: 100%;
+      max-width: 650px;
+      overflow: hidden;
+      padding: 2rem;
+    }
+  }
+}
