@@ -3,6 +3,7 @@ import "./Room.scss";
 import { RoomFooter } from "./RoomFooter";
 import MessageBox, { IMessage } from "./MessageBox";
 import { RoomInfoBox } from "./RoomInfoBox";
+import { ParticipantsBox } from "./ParticipantsBox";
 
 export const Room: React.FC = () => {
   const [popUpMessageBox, setPopupMessageBox] = useState<boolean>(true);
@@ -39,6 +40,7 @@ export const Room: React.FC = () => {
       <div className="room-body">
         <div className="room-body__left">
           {/* video box */}
+          <ParticipantsBox />
 
           {/* room info box */}
           {popUpInfoBox && (
