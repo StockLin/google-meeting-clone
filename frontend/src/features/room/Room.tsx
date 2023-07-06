@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Room.scss";
 import { RoomFooter } from "./RoomFooter";
 import MessageBox, { IMessage } from "./MessageBox";
+import { RoomInfoBox } from "./RoomInfoBox";
 
 export const Room: React.FC = () => {
   const [popUpMessageBox, setPopupMessageBox] = useState<boolean>(true);
+  const [popUpInfoBox, setPopupInfoBox] = useState<boolean>(true);
 
   const defaultMessages: IMessage[] = [
     {
@@ -35,7 +37,17 @@ export const Room: React.FC = () => {
   return (
     <div className="room">
       <div className="room-body">
-        <div className="room-body__left">video</div>
+        <div className="room-body__left">
+          {/* video box */}
+
+          {/* room info box */}
+          {popUpInfoBox && (
+            <RoomInfoBox
+              url="ak101-01-dt001-123"
+              onClose={() => setPopupInfoBox(false)}
+            />
+          )}
+        </div>
 
         {/* message box */}
         {popUpMessageBox && (

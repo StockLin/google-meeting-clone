@@ -1,0 +1,56 @@
+@import "../../index.scss";
+
+.info-container {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px 24px;
+
+  .info-container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-container_copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $palette-grey-200;
+    border-radius: 4px;
+    padding: 4px;
+
+    span {
+      flex: 1;
+    }
+  }
+
+  .info-container_security {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px;
+      border-radius: 50%;
+      background-color: #e7f0fe;
+    }
+  }
+
+  .info-container_note {
+    font-size: 2px;
+    color: $palette-grey-700;
+  }
+}
